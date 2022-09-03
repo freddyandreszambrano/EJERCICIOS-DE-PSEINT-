@@ -1,0 +1,53 @@
+Algoritmo estacionamiento_valor_a_pagar
+	definir h_llegada,h_salida,min_salida,min_llegada,total1,total2,minu Como Entero
+	definir monto Como Real
+	definir A,P como caracter
+	h_llegada=0;h_salida=0;min_llegada=0;min_salida=0;llegada=0;total1=0;total2=0;A='A';P='P'
+	Escribir 'ingrese la hora de llegada y los minutos de llegada'
+	Leer h_llegada,min_llegada
+	Escribir 'ingrese la hora de salida y los minutos de salida '
+	Leer h_salida,min_salida
+	si h_salida <= 24 y h_llegada <= 24 y min_llegada <= 60 y min_salida_ <= 60 Entonces
+		si min_llegada < min_salida Entonces
+			minu = min_salida - min_llegada
+			total1= h_salida - h_llegada
+			total1= total1 * 4
+			total2= minu * 2.50
+			si h_llegada >= 1 y h_salida <= 11 Entonces
+				Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',A,' hasta ',h_salida,':', min_salida,' ',A
+				Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+			SiNo
+				si h_llegada >= 12 y h_salida <= 24 Entonces
+					Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',P,' hasta ',h_salida,':', min_salida,' ',P
+					Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+				SiNo
+					si h_llegada <= 11 y h_salida >= 12
+						Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',A,' hasta ',h_salida,':', min_salida,' ',P
+						Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+					FinSi
+				FinSi
+			FinSi
+		SiNo
+			minu= min_llegada - min_salida
+			total1= h_salida - h_llegada
+			total1= total1 * 4
+			total2= minu * 2.50
+			si h_llegada >= 1 y h_salida <= 11 Entonces
+				Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',A,' hasta ',h_salida,':', min_salida,' ',A
+				Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+			SiNo
+				si h_llegada >= 12 y h_salida <= 24 Entonces
+					Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',P,' hasta ',h_salida,':', min_salida,' ',P
+					Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+				SiNo
+					si h_llegada <= 11 y h_salida >= 12
+						Escribir 'el vehículo permanecio desde ',h_llegada,':',min_llegada,' ',A,' hasta ',h_salida,':', min_salida,' ',P
+						Escribir 'el monto total a pagar es: ',total1,',',total2,'$'
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	SiNo
+		Escribir 'la hora es incorrecta'
+	FinSi
+FinAlgoritmo

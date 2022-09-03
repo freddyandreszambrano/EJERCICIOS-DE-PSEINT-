@@ -1,0 +1,17 @@
+Algoritmo imprimir_positivo_o_negativo_según_sea_el_número
+	Definir num1 Como Entero
+	num1=0
+	Escribir "Ingrese un numero"
+	Leer num1
+	Si num1 > 0 Entonces
+		Escribir" Es positivo" 
+	SiNo
+		Si num1 < 0 Entonces
+			Escribir" Es negativo"
+		SiNo
+			Si num1 == 0 Entonces
+				Escribir" Es igual a cero"
+			Fin Si
+		Fin Si
+	Fin Si
+FinAlgoritmo

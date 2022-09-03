@@ -1,0 +1,46 @@
+Algoritmo sin_titulo
+	Definir incremeto,pago,pago_minuto Como Real
+	Definir hora_entrega,hora_salida,min_entrada,min_salida Como Entero
+	Definir hora_estacionado,min_estacionado,bs Como Entero
+	hora_estacionado <- 0; hora_entrada <- 0; hora_salida <- 0; bs=4
+	incremento <- 2.50; pago <- 0; min_entrada <- 0; min_salida <- 0
+	min_estacionado <- 0;pago_minuto=0
+	Escribir 'ingresar hora de entrada del vehiculo'
+	Leer hora_entrada
+	Escribir 'ingresar minutos de entrada del vehiiculo'
+	Leer min_entrada
+	Escribir 'ingresar hora de salida del vehiculo'
+	Leer hora_salida
+	Escribir 'ingresar minutos de salida del vehiculo'
+	Leer min_salida
+	Si hora_entrada<hora_salida Entonces
+		hora_estacionado=hora_salida-hora_entrada
+	SiNo
+		hora_estacionado=hora_entrada-hora_salida
+	FinSi
+	Si min_entrada<min_salida Entonces
+		min_estacionado=min_salida-min_entrada
+	SiNo
+		min_estacionado=min_entrada-min_salida
+	FinSi
+	Si hora_entrada>=1 Y hora_salida<11 Entonces
+		Escribir 'se ingreso al vehivulo a las ',hora_entrada,':',min_entrada,' A'
+		Escribir 'se retiro al vehivulo a las ',hora_salida,':',min_salida,' A'
+	SiNo
+		Si hora_entrada>=1 Y hora_salida<=24 Entonces
+			Escribir 'se ingreso al vehivulo a las ',hora_entrada,':',min_entrada,' A'
+			Escribir 'se retiro el vehiculo a las ',hora_salida,':',min_salida,' P'
+		SiNo
+			Si hora_entrada>=12 Y hora_salida<24 Entonces
+				Escribir 'se ingreso al vehivulo a las ',hora_entrada,':',min_entrada,' P'
+				Escribir 'se retiro el vehiculo a las ',hora_salida,':',min_salida,' P'
+			FinSi
+		FinSi
+	FinSi
+	si min_estacionado=30 Entonces
+		pago_minuto=2.5
+	FinSi
+	pago=(hora_estacionado*bs)+pago_minuto
+	Escribir 'las horas que permanecio estacionado el vehiculo son ',hora_estacionado,' horas con ',min_estacionado,' minutos'
+	Escribir 'el total a pagar por ',hora_estacionado,' horas con ',min_estacionado,' minutos es ',pago," bs"
+FinAlgoritmo

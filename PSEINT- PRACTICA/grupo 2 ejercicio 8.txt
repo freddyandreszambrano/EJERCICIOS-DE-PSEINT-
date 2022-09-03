@@ -1,0 +1,67 @@
+Algoritmo número_de_días_que_han_pasado_desde_el_1_de_Enero_de_2014_hasta_la_fecha_dada
+	fecha=0;dias=0;mes=0;año=2014;tiempo_concuttido=0;dias_m=0
+	Escribir "la fecha es 01/01/2014"
+	Escribir "ingresar fecha actual dd/mm/aaaa"
+	Leer dias, mes
+	Si mes==01 Entonces
+		Escribir sias," enero ",año
+		dias_m=0
+	SiNo
+		Si mes==02 Entonces
+			Escribir dias," febrero ",año
+			dias_m=31
+		SiNo
+			Si mes==03 Entonces
+				Escribir dias," marzo ",año
+				dias_m=28+31
+			SiNo
+				Si mes==04 Entonces
+					Escribir dias," abril ",año
+					dias_m=31+28+31
+				SiNo
+					Si mes==05 Entonces
+						Escribir dias," mayo ",año
+						dias_m=30+31+28+31
+					SiNo
+						Si mes==06 Entonces
+							Escribir dias," junio ",año
+							dias_m=31+30+31+28+31
+						SiNo
+							Si mes==07 Entonces
+								Escribir dias," julio ",año
+								dias_m=30+31+30+31+28+31
+							SiNo
+								Si mes==8 Entonces
+									Escribir dias," agosto ",año
+									dias_m=31+30+31+30+31+28+31
+								SiNo
+									Si mes==09 Entonces
+										Escribir dias," septiembre ",año
+										dias_m=31+31+30+31+30+31+28+31
+									SiNo
+										Si mes==10 Entonces
+											Escribir dias, "octubre ",año
+											dias_m=30+31+31+30+31+30+31+28+31
+										SiNo
+											Si mes==11 Entonces
+												Escribir dias, "nobiembre del ",año
+												dias_m=31+30+31+31+30+31+30+31+28+31
+											SiNo
+												Si mes==12 Entonces
+													Escribir dias, " de diciembre del ",año
+													dias_m=30+31+30+31+31+30+31+30+31+28+31
+												Fin Si
+											Fin Si
+										Fin Si
+									Fin Si
+								Fin Si
+							Fin Si
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+	tiempo_concurrido=dias+dias_m
+	Escribir,tiempo_concurrido " los dias que han pasado desde el 1 de enero del 2014 son"
+FinAlgoritmo
