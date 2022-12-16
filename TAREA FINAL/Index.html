@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wave">
+            <span style="--item:1">C</span>
+            <span style="--item:2">A</span>
+            <span style="--item:3">L</span>
+            <span style="--item:4">C</span>
+            <span style="--item:5">U</span>
+            <span style="--item:6">L</span>
+            <span style="--item:7">A</span>
+            <span style="--item:8">D</span>
+            <span style="--item:9">O</span>
+            <span style="--item:10">R</span>
+            <span style="--item:11">A</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="">
+    <table>
+        <tr>
+            <td colspan="5"><input id="result" autocomplete="off" ></td> 
+        </tr>
+        <tr>
+            <td><button type="button" onclick="cal.divisores()" class="efecto">Divisores</button></td>
+            <td><button  type="button" onclick="cal.num_invertido()"class="efecto">Invertir Numero</td>
+            <td><button  type="button" onclick="cal.primo()"class="efecto">Primo</button></td> 
+            <td><button type="button" onclick="cal.perfecto()"class="efecto">Perfecto</button></td> 
+            <td><button type="button" onclick="cal.fibonacci()"class="efecto">Fibonacci</button></td> 
+        </tr>
+        <tr>
+            <td><button type="button"  onclick="cal.base10_a2()"class="efecto">Base 10 a 2</button></td>
+            <td><button type="button"  onclick="cal.base10a16()"class="efecto">Base 10 a 16</button></td> 
+            <td><button type="button" onclick="cal.base10_a8()"class="efecto">Base 10 a 8</button></td>
+            <td><button type="button" onclick="cal.base2_10()"class="efecto">Base 2 a 10</button></td>
+            <td><button type="button" onclick="cal.base2_a16()"class="efecto">Base 2 a 16</button></td>
+            
+        </tr>
+        <tr>
+            <td><button type="button" onclick="cal.contar_palabras()"class="efecto">Contar Palabras</button></td>
+            <td><button type="button" onclick="cal.palindroma()"class="efecto">Palindroma</button></td> 
+            <td><button type="button" onclick="cal.Invertida()"class="efecto">Invertir Frase</button></td>
+            <td><button type="button" onclick="cal.contar_caracteres()"class="efecto">Contar Caracteres</button></td>
+            <td><button type="button" onclick="cal.buscar_cadena()"class="efecto">Buscar Cadena</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="cal.mayor_arreglo()"class="efecto">Mayor Arreglo</button></td>
+            <td><button type="button" onclick="cal.promedio_arreglo()"class="efecto">Promedio Arreglo</button></td> 
+            <td><button type="button" onclick="cal.buscarArreglo()"class="efecto">Buscar Arreglo</button></td>
+            <td><button type="button" onclick="cal.eliminar_arreglo()" class="efecto">Eliminar Elemento Arreglo</button></td>
+            <td><button type="button" onclick="cal.insertar_arreglo()"class="efecto">Insertar Elemento Arreglo</button></td>
+        </tr>
+    </table><br>
+    <br>
+    <div class="container">
+        <div class="button-borders">
+            <button class="primary-button" type="reset">LIMPIAR</button>
+          </div>
+    </div>
+    </form>
+    <script src="./Ejercicios.js"> </script>
+</body>
+</html>
